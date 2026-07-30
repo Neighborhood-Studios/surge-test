@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+:root{
+--font-sans:'Hanken Grotesk',-apple-system,'Helvetica Neue',sans-serif;
+/* Scale */
+--text-display:clamp(44px,6vw,84px);--text-h1:56px;--text-h2:40px;--text-h3:28px;--text-h4:22px;
+--text-body-lg:19px;--text-body-md:16px;--text-body-sm:14px;--text-eyebrow:12px;
+/* Weights */
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+/* Leading & tracking */
+--leading-display:1.02;--leading-heading:1.1;--leading-body:1.55;
+--tracking-display:-0.03em;--tracking-heading:-0.02em;--tracking-eyebrow:0.14em;
+}
+body{font-family:var(--font-sans);color:var(--text-body);background:var(--bg-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{color:var(--text-heading);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-heading);line-height:var(--leading-heading);margin:0}
+a{color:var(--ink);text-decoration:none}
+a:hover{color:var(--blue-600)}
+.eyebrow{font-size:var(--text-eyebrow);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--ink-2)}

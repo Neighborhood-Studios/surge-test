@@ -1,0 +1,20 @@
+:root{
+/* Paper & ink — warm off-white ground, near-black text */
+--paper:#F4F3EE;--paper-2:#EDECE6;--surface:#FFFFFF;--surface-dim:#F7F7F4;
+--ink:#17181A;--ink-2:#55575C;--ink-3:#9B9DA3;--ink-inverse:#FFFFFF;
+/* Hairlines / grid */
+--line:rgba(23,24,26,.08);--line-strong:rgba(23,24,26,.16);
+/* Primary — action blue */
+--blue-600:#1878C6;--blue-500:#1F8FE5;--blue-400:#3FA5F0;--blue-100:#BFE2FA;--blue-50:#E8F4FD;
+/* Success green */
+--green-600:#43A81C;--green-500:#5BC531;--green-50:#EDF9E6;
+/* Surge gradient (brand energy — yellow → orange → ember) */
+--surge-yellow:#F2E14C;--surge-orange:#F5960B;--surge-ember:#E8500F;
+--surge-grad:linear-gradient(180deg,var(--surge-yellow) 0%,var(--surge-orange) 55%,var(--surge-ember) 100%);
+/* Semantic aliases */
+--bg-page:var(--paper);--surface-card:var(--surface);
+--text-heading:var(--ink);--text-body:var(--ink-2);--text-muted:var(--ink-3);
+--action-primary:var(--blue-500);--action-primary-hover:var(--blue-600);
+--icon-tint:var(--blue-100);--success:var(--green-500);
+--border-default:var(--line);
+}

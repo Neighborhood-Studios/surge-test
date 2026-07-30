@@ -1,0 +1,13 @@
+:root{
+/* Shadows — soft, diffuse, never harsh */
+--shadow-card:0 2px 8px rgba(23,24,26,.05),0 1px 2px rgba(23,24,26,.04);
+--shadow-float:0 16px 40px rgba(23,24,26,.10),0 4px 12px rgba(23,24,26,.06);
+--shadow-phone:0 40px 90px rgba(23,24,26,.18);
+--shadow-menu:0 12px 32px rgba(23,24,26,.12);
+/* Grain — layer over --surge-grad via a pseudo-element with this bg */
+--grain-url:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");/* @kind other */
+}
+.surge-grad{position:relative;background:var(--surge-grad)}
+.surge-grad::after{content:"";position:absolute;inset:0;background-image:var(--grain-url);mix-blend-mode:overlay;opacity:.55;pointer-events:none}
+.grid-lines{position:relative}
+.grid-lines::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px calc(100%/4));background-size:calc(100% + 1px) 100%;pointer-events:none}

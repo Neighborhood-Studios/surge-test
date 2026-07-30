@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surge Design System · Directory</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  :root { --paper:#F4F3EE; --ink:#17181A; --ink-2:#5a5b5f; --blue:#1F8FE5; }
+  * { box-sizing: border-box; }
+  html,body { margin:0; padding:0; background:var(--paper); color:var(--ink); font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 64px 32px 96px; }
+  .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 16px; }
+  h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.02; margin: 0 0 20px; }
+  .lede { font-size: 19px; line-height: 1.5; color: var(--ink-2); max-width: 640px; margin: 0 0 40px; }
+  h2 { font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); margin: 48px 0 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(23,24,26,0.12); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  a.card { display:block; background:#fff; border-radius: 24px; padding: 24px; text-decoration: none; color: var(--ink); box-shadow: 0 2px 12px rgba(23,24,26,0.04); transition: transform .15s ease, box-shadow .15s ease; }
+  a.card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(23,24,26,0.08); }
+  a.card .t { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 6px; }
+  a.card .d { font-size: 14px; color: var(--ink-2); line-height: 1.45; }
+  .pills { display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 8px; }
+  .pill { display:inline-block; padding: 10px 18px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 13px; letter-spacing: 0.02em; }
+  .pill.primary { background: var(--ink); color: #fff; }
+  .pill.primary:hover { opacity: 0.85; }
+  .pill.ghost { background: transparent; color: var(--ink); border: 1px solid rgba(23,24,26,0.18); }
+  .pill.ghost:hover { background: rgba(23,24,26,0.04); }
+  footer { margin-top: 64px; font-size: 13px; color: var(--ink-2); }
+  footer a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Neighborhood Studios · Surge</p>
+  <h1>Directory.</h1>
+  <p class="lede">Everything shipped in the Surge design system export — marketing site, mobile product mockup, brand guidelines, and components.</p>
+  <div class="pills">
+    <a class="pill primary" href="../">Marketing site →</a>
+    <a class="pill ghost" href="../ui_kits/app/">Mobile app →</a>
+  </div>
+
+  <h2>UI Kits</h2>
+  <div class="grid">
+    <a class="card" href="../"><div class="t">Marketing Site (latest)</div><div class="d">The live Surge marketing site at root — mobile-optimized bundle.</div></a>
+    <a class="card" href="../ui_kits/website/"><div class="t">Marketing Site (design-system version)</div><div class="d">Original DC design-system export of the marketing page.</div></a>
+    <a class="card" href="../ui_kits/app/"><div class="t">Mobile App</div><div class="d">In-product mockup — projects, capture flow, generate estimate.</div></a>
+  </div>
+
+  <h2>Brand Guidelines</h2>
+  <div class="grid">
+    <a class="card" href="../guidelines/brand-logo.html"><div class="t">Logo</div><div class="d">Wordmark usage.</div></a>
+    <a class="card" href="../guidelines/brand-shadows.html"><div class="t">Shadows</div><div class="d">Elevation tokens.</div></a>
+    <a class="card" href="../guidelines/colors-gradient.html"><div class="t">Color · Gradient</div><div class="d">Yellow→orange ember gradient.</div></a>
+    <a class="card" href="../guidelines/colors-semantic.html"><div class="t">Color · Semantic</div><div class="d">Ink, action blue, success green.</div></a>
+    <a class="card" href="../guidelines/type-headings.html"><div class="t">Type · Headings</div><div class="d">Display specimens.</div></a>
+  </div>
+
+  <h2>Components</h2>
+  <div class="grid">
+    <a class="card" href="../components/core/core.card.html"><div class="t">Core · Card</div><div class="d">White card on paper, 24px radius.</div></a>
+    <a class="card" href="../components/product/product.card.html"><div class="t">Product · Card</div><div class="d">In-product card variant.</div></a>
+  </div>
+
+  <footer>
+    <p>Neighborhood Studios test deploy · <a href="../readme.md">README</a> · <a href="https://github.com/Neighborhood-Studios/surge-test">GitHub</a></p>
+  </footer>
+</div>
+</body>
+</html>
